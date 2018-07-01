@@ -8,19 +8,21 @@
  
 
   (function(){
-  
 	var jQuery = window.jQuery = window.$ = function(selector) {
-		
+             将匿名函数内部定义的$赋值window.$
 		return new jQuery.fn.init(selector);
+	      利用new来构造一个对象
 	})();
   		
 		
 		/* 
           function New(f){
-				return function(...arr){
-				var obj={_proto_:f.prototype};
-				f.apply(obj,arr);
-				return obj;
+	               var obj={_proto_:f.prototype};
+		       利用闭包将obj对象存储起来
+			return function(...arr){
+			f.apply(obj,arr);
+		       修改函数内部指向
+			return obj;
 						}
 					}
 					伪造new的内部实现
