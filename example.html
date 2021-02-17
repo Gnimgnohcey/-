@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+   <head></head>
+   <body>
+       <div id="app">123
+           <h1 v-model="something">
+               <h2>测试{{a}}{{out()}}asdasd{{out()}}</h2>
+           </h1>
+           <div v-hhh="123">测试2{{b}}{{out()}}</div>
+           <div>{{b}}</div>
+       </div>
+       <button>12</button>
+   </body>
+   <script src="./cm.js"></script>
+   <script>
+createCM({
+    data(){
+        return{
+            a:198,
+            b:2,
+            c:3
+        }
+    },
+    methods:{
+       out(){
+           return 'hahah'
+       }
+    }
+}).initDom("#app")
+    </script>
+</html>
