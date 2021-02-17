@@ -23,6 +23,7 @@ class CM{
     //     this.$data.b++
     //     this.$data.a+=2
     //    },1000)
+//         测试代码
        //created后才将data初始化
     }
     beforeCreated(){
